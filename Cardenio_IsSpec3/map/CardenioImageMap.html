@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Map</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start; /* Align items to the left */
+        }
+        img {
+            width: auto;
+            height: auto; /* Full height to cover the viewport */
+            object-fit: cover; /* Ensure the image covers the area */
+            position: absolute; /* Position it absolutely */
+            top: 0;
+            left: 0;
+            z-index: 1; /* Ensure it's behind the heading */
+        }
+        h1 {
+            position: relative;
+            z-index: 10; 
+            color: white; 
+            background-color: rgba(0, 0, 0, 0.5); 
+            padding: 10px; 
+            margin: 20px; 
+            border-radius: 5px;
+            text-align: left; /* Align text to the left */
+            left: 50px; /* Position from the left */
+        }
+    </style>    
+</head>
+<body>
+    <h1>World Map</h1>
+    <img src="worldmap.png" alt="World Map" usemap="#workmap">
+
+    <map name="workmap">
+        <area shape="poly" coords="689,216,689,238,703,258,690,282,675,293,665,297,666,317,678,322,686,298,700,295,715,294,716,277,714,259,700,238,710,239,718,232" href="japan.html" target="_blank">
+        <area shape="poly" coords="633,410,629,439,635,451,618,480,633,468,647,474,640,495,652,499,663,495,670,501,676,496,669,473,665,454,644,440,642,426,643,412" href="philippines.html" target="_blank">
+        <area shape="poly" coords="208,38,199,110,225,159,266,151,306,158,326,180,366,188,394,185,422,186,429,171,448,178,470,186,490,188,517,191,536,187,544,181,540,167,553,163,565,171,579,177,605,192,626,203,641,201,639,219,636,227,650,233,661,226,666,199,648,172,668,183,680,206,691,213,685,194,666,169,654,157,632,162,615,154,613,146,615,130,634,123,655,120,674,118,685,109,695,105,710,103,707,131,715,153,737,172,743,183,737,200,747,170,744,157,737,145,723,127,727,115,751,114,767,107,781,97,745,88,764,77,788,86,796,82,783,73,754,70,723,61,694,56,636,53,602,49,560,41,518,35,477,18,469,42,433,34,378,29,379,21,344,12,324,9,303,18,283,22" href="russia.html" target="_blank">
+    </map>
+    
+</body>
+</html>

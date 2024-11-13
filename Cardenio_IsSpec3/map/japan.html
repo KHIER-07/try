@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Japan</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center; 
+            justify-content: flex-start;
+            background-image: url('Japan2.jpg'); 
+            background-size: cover; 
+            background-position: center; 
+            color: white; 
+        }
+        .container {
+            display: flex; 
+            align-items: center; 
+            margin-top: 20px; 
+        }
+        img {
+            width: 400px; 
+            height: 250px; 
+            border: 5px solid white; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin-right: 20px; 
+            cursor: pointer; 
+        }
+        a {
+            position: absolute; 
+            top: 20px; 
+            left: 50%; 
+            transform: translateX(-50%);
+            color: white; 
+            text-decoration: none; 
+            background-color: rgba(0, 0, 0, 0.5); 
+            padding: 10px 15px; 
+            border-radius: 5px;
+        }
+        a:hover {
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+        .info {
+            display: none;
+            background-color: rgba(0, 0, 0, 0.5); 
+            padding: 15px; 
+            border-radius: 5px;
+            width: 400px; 
+            text-align: left;
+        }
+        h1 {
+            text-align: left; 
+            margin: 20px 0; 
+            width: 100%;
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <a href="/map/CardenioImageMap.html">Back to World Map</a>
+    <h1>Japan</h1>
+    
+    <div class="container">
+        <img src="japan.jpg" alt="Japan" id="japanImage">
+        <div class="info" id="infoText">
+            <h2>About Japan</h2>
+            <p>Japan is an island country located in East Asia. It is known for its rich cultural heritage, beautiful landscapes, and advanced technology. The capital city is Tokyo, which is one of the most populous cities in the world.</p>
+            <p>Japan is famous for its traditional arts, including tea ceremonies, calligraphy, and flower arranging (ikebana). It is also renowned for its cuisine, such as sushi, ramen, and tempura.</p>
+            <p>The country is home to numerous UNESCO World Heritage Sites, stunning natural scenery, and a unique blend of ancient traditions and modern innovations.</p>
+        </div>
+    </div>
+
+    <script>
+        
+        document.getElementById('japanImage').addEventListener('click', function() {
+            const infoText = document.getElementById('infoText');
+            infoText.style.display = infoText.style.display === 'none' || infoText.style.display === '' ? 'block' : 'none';
+        });
+    </script>
+</body>
+</html>

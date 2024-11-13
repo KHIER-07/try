@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Russia</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center; 
+            justify-content: flex-start;
+            background-image: url('place.jpg'); 
+            background-size: cover; 
+            background-position: center; 
+            color: white; 
+        }
+        .container {
+            display: flex; 
+            align-items: center; 
+            margin-top: 20px; 
+        }
+        img {
+            width: 400px; 
+            height: 250px; 
+            border: 5px solid white; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin-right: 20px; 
+            cursor: pointer; 
+        }
+        a {
+            position: absolute; 
+            top: 20px; 
+            left: 50%; 
+            transform: translateX(-50%);
+            color: white; 
+            text-decoration: none; 
+            background-color: rgba(0, 0, 0, 0.5); 
+            padding: 10px 15px; 
+            border-radius: 5px;
+        }
+        a:hover {
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+        .info {
+            display: none;
+            background-color: rgba(0, 0, 0, 0.5); 
+            padding: 15px; 
+            border-radius: 5px;
+            width: 400px; 
+            text-align: left;
+        }
+        h1 {
+            text-align: left; 
+            margin: 20px 0; 
+            width: 100%;
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <a href="/map/CardenioImageMap.html">Back to World Map</a>
+    <h1>Russia</h1>
+    
+    <div class="container">
+        <img src="Flag_of_Russia.jpg" alt="Russia" id="russiaImage">
+        <div class="info" id="infoText">
+            <h2>About Russia</h2>
+            <p>Russia is the largest country in the world, spanning Eastern Europe and northern Asia. It is known for its rich history, diverse culture, and vast landscapes. The capital city is Moscow, famous for its historic architecture, including the Kremlin and Red Square.</p>
+            <p>Russia is renowned for its contributions to literature, ballet, music, and art, with famous figures like Leo Tolstoy, Pyotr Tchaikovsky, and Wassily Kandinsky.</p>
+            <p>The country is also home to numerous natural wonders, such as Lake Baikal, the deepest freshwater lake in the world, and the vast Siberian tundra, showcasing a unique blend of natural beauty and cultural heritage.</p>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('russiaImage').addEventListener('click', function() {
+            const infoText = document.getElementById('infoText');
+            infoText.style.display = infoText.style.display === 'none' || infoText.style.display === '' ? 'block' : 'none';
+        });
+    </script>
+</body>
+</html>
